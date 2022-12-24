@@ -122,8 +122,10 @@ int seek_right_distance(){
 }
 
 void halt(){
-  analogWrite(ENa, 0);
-  analogWrite(ENb, 0);
+  digitalWrite(LF, LOW);
+  digitalWrite(LB, LOW);
+  digitalWrite(RF, LOW);
+  digitalWrite(RB, LOW);
 }
 
 void move_forward(){
